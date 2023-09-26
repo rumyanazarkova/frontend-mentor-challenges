@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+}
+
+:root {
+    --clr-orange: hsl(25, 97%, 53%);
+
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-light-grey: hsl(217, 12%, 63%);
+    --clr-medium-grey: hsl(216, 12%, 54%);
+    --clr-dark-blue: hsl(213, 19%, 18%);
+    --clr-very-dark-blue: hsl(216, 12%, 8%);
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    background: var(--clr-very-dark-blue);
+    color: var(--clr-medium-grey);
+    padding: 1rem;
+}
+
+.card {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+    border-radius: 10px;
+    margin: 2rem auto;
+    background: linear-gradient(0deg,hsl(213, 19%, 12%) ,hsl(213, 19%, 18%)) ;
+    padding: 2.5rem;
+    flex: 1;
+}
+
+img {
+    padding: 0.7rem; 
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: hsl(213, 19%, 22%);
+}
+
+h1 {
+    color: var(--clr-white);
+    font-weight: 400;
+    letter-spacing: 0.06ch;
+}
+
+p {
+    font-size: 0.82rem;
+    line-height: 1.4;
+   
+}
+
+.grade {
+    display: flex;
+    justify-content: space-between;
+}
+
+.number-btn {
+    font-size: 0.8rem;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: none;
+    background: hsl(213, 19%, 22%);
+    color: var(--clr-light-grey);
+    cursor: pointer;
+}
+.number-btn:hover{
+    color: var(--clr-white);
+    background: var(--clr-medium-grey);
+}
+.number-btn:focus{
+    color: var(--clr-white);
+    background: var(--clr-orange);
+}
+
+.submit-btn {
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.3ch;
+    background: var(--clr-orange);
+    color: var(--clr-white);
+    padding: 1rem;
+    border-radius: 30px;
+    border: none;
+}
+.submit-btn:active,
+.submit-btn:hover{
+    background: var(--clr-white);
+    color: var(--clr-orange);
+    cursor: pointer;
+}
+.thank-you{
+    align-items: center;
+    text-align: center; 
+}
+.icon-img{
+    width: 120px;
+    height: 100px;
+   
+}
+.result{
+   background: #2d3743;
+    padding: 0.2rem 1.2rem;
+    color: var(--clr-orange);
+    border-radius: 20px;
+}
+

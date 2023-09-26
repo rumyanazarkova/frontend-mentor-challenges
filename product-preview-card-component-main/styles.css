@@ -1,0 +1,152 @@
+:root {
+    --clr-dark-cyan: hsl(158, 36%, 37%);
+    --clr-dark-cyan-hover: hsl(158, 36%, 20%);
+    --clr-cream: hsl(30, 38%, 92%);
+    --clr-very-dark-blue: hsl(212, 21%, 14%);
+    --clr-dark-grayish-blue: hsl(228, 12%, 48%);
+    --clr-white: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: var(--clr-cream);
+    padding: 1rem;
+}
+
+.perfume-card {
+    display: grid;
+    background: var(--clr-white);
+    border-radius: 10px;
+     margin: 1rem auto; 
+}
+
+.img {
+    background: url('./images/image-product-mobile.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 250px;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+
+.text {
+    display: grid;
+    padding: 1.5rem;
+    gap: 1em;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+h3 {
+    font-size: .8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5ch;
+    color: var(--clr-dark-grayish-blue);
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    line-height: 1;
+    color: var(--clr-very-dark-blue);
+}
+
+p {
+    color: var(--clr-dark-grayish-blue);
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+.new-price {
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    color: var(--clr-dark-cyan);
+
+}
+
+.old-price {
+    text-decoration: line-through;
+    font-size: 0.9rem;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    gap: 1rem;
+    color: var(--clr-white);
+    background: var(--clr-dark-cyan);
+    border: none;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--clr-dark-cyan-hover);
+}
+
+@media (min-width:600px) {
+  
+    .perfume-card {
+        grid-template-columns: 1fr 1fr;
+        max-width: 500px;
+    }
+
+    .img {
+        background: url('./images/image-product-desktop.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 400px;
+
+        border-top-left-radius: inherit;
+        border-bottom-left-radius: inherit;
+        border-top-right-radius: 0;
+    }
+
+    h3 {
+        font-size: .6rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 0.75rem;
+    }
+
+    .new-price {
+        font-size: 1.8rem;
+    }
+
+    .old-price {
+        font-size: 0.7rem;
+    }
+
+    button {
+       
+        gap: 0.6rem;
+        font-size: 0.7rem;
+        letter-spacing: 0.1ch;
+        padding: 0.7rem;
+        align-items: center;
+        border-radius: 7px;
+    }
+    button img{
+        scale:0.9;
+    }
+
+}
